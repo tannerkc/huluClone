@@ -1,0 +1,56 @@
+.videoCard{
+    color: white;
+    margin: 2rem;
+    width: 500px;
+    height: 400px;
+    transition: all .2s ease-in-out;
+}
+.likes{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    opacity: 0;
+    transform: translateY(-1.5rem);
+    transition: all .45s ease-in-out;
+}
+.likes p{
+    padding-right: .8rem;
+}
+.likes span{
+    padding: 0 1rem;
+}
+.truncate {
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    transition: all .2s ease;
+}
+/* .videoCard:hover .truncate {
+    max-width: 100%;
+    white-space: normal;
+    overflow: visible;
+} */
+.movieDescription{
+    opacity: .6;
+    transition: opacity .3s ease-in-out;
+
+}
+.videoCard:hover{
+    transform: scale(1.06);
+    z-index: 99;
+}
+.videoCard:hover img{
+    transform: scale(1.02);
+    padding-bottom: 1rem;
+}
+.videoCard:hover .likes{
+    opacity: 1;
+    transform: translateY(0rem);
+}
+.videoCard img{
+    width: 500px;
+    height: 300px;
+    /* border-radius: .3rem; */
+    transition: all .18s ease-in-out;
+}

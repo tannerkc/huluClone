@@ -1,0 +1,27 @@
+.nav{
+    overflow-x: scroll;
+    display: flex;
+    color: white;
+    padding: 1rem;
+    padding-left: 3.5rem;
+    scrollbar-width: none;
+}
+
+.nav::-webkit-scrollbar{
+    display: none;
+}
+
+.nav h2{
+    text-align: center;
+    cursor: pointer;
+    margin: 0 1.8rem;
+    font-weight: 400;
+    min-width: 6.8rem;
+    opacity: .65;
+    transition: all .3s ease;
+}
+
+.nav h2:hover{
+    opacity: 1;
+    transform: scale(1.2);
+}
